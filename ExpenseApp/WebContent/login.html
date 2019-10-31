@@ -13,14 +13,11 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+
         function validateForm() {
+            var login = document.getElementById("login").value;
+            var pass = document.getElementById("password").value;
 
-            var x;
-
-            // Get the value of the input field with id="numb"
-            login = document.getElementById("login").value;
-            pass = document.getElementById("password").value;
-            // If x is Not a Number or less than one or greater than 10
             if (login == 'marytan' || 'limzeyang' || 'prasannaghali') {
                 if (pass == 123456) {
                     console.log("true");
@@ -28,10 +25,10 @@
                     return true;
                 }
 
-            } else {
-                alert("Username and Password incorrect");
-                return false;
             }
+            window.alert("Username and Password incorrect");
+            return false;
+
 
         }
 

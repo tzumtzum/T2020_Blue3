@@ -41,21 +41,17 @@
     <script>
         var output = [];
         function fetchData() {
-            var myHeaders = new Headers();
-            myHeaders.set('identity', 'Group3');
-            myHeaders.set('token', '41ae9f00-7900-4b4a-a5e9-8d8482d1e89e');
-            myHeaders.set('Access-Control-Allow-Origin', '*');
-            myHeaders.set('mode', 'no-cors');
-            fetch('http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/transactions/10?from=01-01-2018&to=02-01-2018')
+            fetch('http://916c2be8.ngrok.io/api/expenses')
                 .then(res => res.json())
                 .then((out) => {
                     array = out;
+                    arraytest = out;
                     console.log('Output: ', out);
-                    console.log(array);
+                    console.log(arraytest);
                 }).catch(err => console.error(err));
         }
 
-
+        
         // fetch api with url
 
         /* var myHeaders = new Headers();
@@ -67,8 +63,7 @@
         var array = [{ y: 79.45, label: "Transport" },
         { y: 7.31, label: "ATM" },
         { y: 7.06, label: "Transfer" },
-        { y: 4.91, label: "F&B" },
-        { y: 50.26, label: "Others" }]
+        { y: 4.91, label: "F&B" }]
 
 
 
@@ -84,7 +79,7 @@
                 data: [{
                     type: "pie",
                     startAngle: 240,
-                    yValueFormatString: "\"$\"##0.00\"SGD\"",
+                    yValueFormatString: "\"$\"##0.00",
                     indexLabel: "{label} {y} ",
                     dataPoints: array
 
@@ -111,7 +106,7 @@
 
                 td.appendChild(document.createTextNode(array[i].label));
                 td.appendChild(document.createTextNode(' ------------- '));
-                td.appendChild(document.createTextNode(array[i].y));
+                td.appendChild(document.createTextNode('$'+array[i].y));
                 td.style.border = '0px solid black';
             }
             body.appendChild(tbl);
@@ -140,7 +135,7 @@
                             <span class="sr-only">(current)</span>
                         </a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">History</a>
+                    <li class="nav-item"><a class="nav-link" href="http://b4b64f0d.ngrok.io/ExpenseApp/history.html">Transactions History</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Planner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
