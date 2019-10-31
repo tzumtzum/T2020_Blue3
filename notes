@@ -5,3 +5,146 @@ http://b4b64f0d.ngrok.io/ExpenseApp/dashboard.html
 41ae9f00-7900-4b4a-a5e9-8d8482d1e89e
 http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/marytan
 
+GET CUSTOMER ID
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/limzeyang
+Return 
+{
+    "userName": "limzeyang",
+    "customerId": "1"
+}
+
+GET CUSTOMER DETAILS
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/1/details
+Return
+{
+    "customerId": "1",
+    "gender": "Male",
+    "firstName": "Ze Yang",
+    "lastName": "Lim",
+    "lastLogIn": "2019-01-27T14:00:00.000+0000",
+    "dateOfBirth": "2000-02-01T00:00:00.000+0000"
+}
+
+GET LIST OF DEPOSIT ACCOUNTS
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/deposit/1
+Return
+[
+    {
+        "accountId": 10,
+        "type": "SAVINGS",
+        "displayName": "POSB SAVINGS ACCOUNT",
+        "accountNumber": "588967151"
+    }
+]
+
+
+GET BALANCE OF DEPOSIT ACCOUNTS
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/deposit/10/balance?month=1&year=2018
+Return
+{
+    "availableBalance": "2365.07",
+    "currency": "S$",
+    "dateOfBalance": "2018-02-28T08:00:00.364+0000",
+    "displayName": "POSB SAVINGS ACCOUNT",
+    "accountNumber": "806290151",
+    "accountType": "SAVINGS"
+}
+
+GET List of Credit Accounts
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/credit/2
+Return 
+[
+    {
+        "accountId": 106,
+        "displayName": "VISA Platinum",
+        "cardNumber": "1234-2345-3456-4567"
+    },
+    {
+        "accountId": 206,
+        "displayName": "DBS Altitude Visa Signature Card",
+        "cardNumber": "1111-2222-3333-4444"
+    }
+]
+
+GET Outstanding Balance of a Credit Account
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/credit/106/balance
+return
+{
+    "accountId": 106,
+    "outstandingAmount": "1322.80",
+    "datePayable": "2019-10-25T00:00:00.000+0000",
+    "currency": "S$",
+    "displayName": "VISA Platinum",
+    "cardNumber": "1234-2345-3456-4567"
+}
+
+GET LIST OF MARKETING MESSAGES
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/marketing
+
+Return
+[
+    {
+        "messageId": 1,
+        "dateCreated": "2018-12-20T08:00:00.000+0000",
+        "summary": "Grab discount with PayLah!",
+        "type": "Savings"
+    },
+    {
+        "messageId": 2,
+        "dateCreated": "2018-12-20T08:06:40.000+0000",
+        "summary": "GoJek voucher with DBS card",
+        "type": "Savings"
+    },
+    {
+        "messageId": 3,
+        "dateCreated": "2018-12-20T08:26:40.000+0000",
+        "summary": "Cashback with DBS new credit card",
+        "type": "Credit Cards"
+    }
+]
+
+GET Details of a Marketing Message
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/marketing/1
+{
+    "dateCreated": "2018-12-20T08:00:00.000+0000",
+    "summary": "Grab discount with PayLah!",
+    "subject": "Grab Anniversary Promo",
+    "body": "Enjoy your discount when you pay for Grab with PayLah! Offer till 5th Jul 2019!",
+    "type": "Savings"
+}
+
+GET Personal Messages
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/message/1
+Return
+[
+    {
+        "messageId": 10000,
+        "dateCreated": "2019-01-20T06:00:00.000+0000",
+        "topic": "General",
+        "subject": "Enquiry",
+        "body": "Hi, I would like to check if there are any recommendation for me to earn more interest? Regards, Lim Ze Yang",
+        "isRead": true
+    },
+    {
+        "messageId": 10002,
+        "dateCreated": "2019-01-21T06:11:00.000+0000",
+        "topic": "General",
+        "subject": "Enquiry",
+        "body": "Dear Mr Lim, we will be assigning a RM to get in touch with you for actions that you can take. Thank you for banking with DBS and we hope to hear from you again!",
+        "isRead": false
+    }
+]
+
+GET Transactions Details
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/transactions/10?from=01-01-2018&to=02-01-2019
+ {
+        "transactionId": "d1911856-60cc-48fb-aac7-f4cb2be6efba",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "16.41",
+        "date": "2018-01-01T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "297899874 BONES"
+    },
+
+
