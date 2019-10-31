@@ -1,0 +1,95 @@
+GET CUSTOMER ID
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/limzeyang
+Return 
+{
+    "userName": "limzeyang",
+    "customerId": "1"
+}
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/marytan
+Return
+{
+    "userName": "marytan",
+    "customerId": "2"
+}
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/prasannaghali
+Return
+{
+    "userName": "prasannaghali",
+    "customerId": "3"
+}
+
+GET CUSTOMER DETAILS
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/1/details
+Return
+{
+    "customerId": "1",
+    "gender": "Male",
+    "firstName": "Ze Yang",
+    "lastName": "Lim",
+    "lastLogIn": "2019-01-27T14:00:00.000+0000",
+    "dateOfBirth": "2000-02-01T00:00:00.000+0000"
+}
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/2/details
+Return
+{
+    "customerId": "2",
+    "gender": "Female",
+    "firstName": "Hui Shan",
+    "lastName": "Tan",
+    "lastLogIn": "2019-01-29T18:00:00.000+0000",
+    "dateOfBirth": "1992-03-25T00:00:00.000+0000"
+}
+
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/3/details
+Return
+{
+    "customerId": "3",
+    "gender": "Male",
+    "firstName": "Prasanna",
+    "lastName": "Ghali",
+    "lastLogIn": "2019-10-10T10:00:00.000+0000",
+    "dateOfBirth": "1955-04-01T00:00:00.000+0000"
+}
+
+GET LIST OF DEPOSIT ACCOUNTS
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/deposit/1
+Return
+[
+    {
+        "accountId": 10,
+        "type": "SAVINGS",
+        "displayName": "POSB SAVINGS ACCOUNT",
+        "accountNumber": "588967151"
+    }
+]
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/deposit/2
+Return
+[
+    {
+        "accountId": 74,
+        "type": "SAVINGS",
+        "displayName": "POSB SAVINGS ACCOUNT",
+        "accountNumber": "490723483"
+    }
+]
+
+GET http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/accounts/deposit/3
+Return
+[
+    {
+        "accountId": 32,
+        "type": "SAVINGS",
+        "displayName": "POSB SAVINGS ACCOUNT",
+        "accountNumber": "120781322"
+    }
+]
+
+
+GET BALANCE OF DEPOSIT ACCOUNTS
+
