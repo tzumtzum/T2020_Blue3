@@ -1,0 +1,344 @@
+[
+    {
+        "transactionId": "d1911856-60cc-48fb-aac7-f4cb2be6efba",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "16.41",
+        "date": "2018-01-01T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "297899874 BONES"
+    },
+    {
+        "transactionId": "6aa118cc-9e11-46ce-a420-d3197e1390e8",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "21.31",
+        "date": "2018-01-01T09:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "874670509 BANK FAST TRANSFER TO 415967364"
+    },
+    {
+        "transactionId": "95cfe565-245e-448c-82af-7c4f03b2f36a",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "50",
+        "date": "2018-01-01T03:00:00.000+0000",
+        "tag": "ATM",
+        "referenceNumber": "726075647 ATM CASH WTIHDRAWAL"
+    },
+    {
+        "transactionId": "8d02bd2b-9e84-4649-903a-2c20abc957cf",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "11.34",
+        "date": "2018-01-03T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "410591772 THE VANILLA ORCHARD"
+    },
+    {
+        "transactionId": "808c71cc-f42d-46d2-b7cc-00209260c644",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "19",
+        "date": "2018-01-03T01:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "2141458 BANK FAST TRANSFER TO 951547718"
+    },
+    {
+        "transactionId": "4e89d4ec-df99-455a-b7c9-8f4240f71a72",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "15.83",
+        "date": "2018-01-04T04:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "563214767 BANK FAST TRANSFER FROM 420691347"
+    },
+    {
+        "transactionId": "6c821bb3-4fef-48ae-aa38-84db4be5a2a2",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "14.58",
+        "date": "2018-01-05T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "904354524 THE SPRING OYSTER"
+    },
+    {
+        "transactionId": "9e8d5b44-86f8-4fbc-b820-a815ff0c2ac2",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "12.63",
+        "date": "2018-01-05T21:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "197270277 BANK FAST TRANSFER TO 63086689"
+    },
+    {
+        "transactionId": "8cd28939-0102-4950-b561-c8b2bb8a3e89",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "11.71",
+        "date": "2018-01-08T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "359045861 THE VERY BEST CHICKEN RICE"
+    },
+    {
+        "transactionId": "f0c20a6b-2901-45c7-bcba-2a63634095b8",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "12.16",
+        "date": "2018-01-08T20:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "725426587 JACK RIDE HAILING"
+    },
+    {
+        "transactionId": "2cabd6e9-5dc4-4e65-9537-9487a9af9eb4",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "16.39",
+        "date": "2018-01-08T01:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "161565971 BANK FAST TRANSFER FROM 638023204"
+    },
+    {
+        "transactionId": "0159b9b5-9952-49db-bb37-87378204ad5d",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "20.96",
+        "date": "2018-01-11T12:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "347552811 BANK FAST TRANSFER TO 522304026"
+    },
+    {
+        "transactionId": "b4a772a2-ded8-4957-81f4-b992d443f507",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "14.11",
+        "date": "2018-01-12T05:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "361920175 SUBER FAST TRANSPORT PTE LTD"
+    },
+    {
+        "transactionId": "84d95c11-a800-4c8f-9136-f19d6e8a7e08",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "10.73",
+        "date": "2018-01-14T04:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "395052973 BANK FAST TRANSFER TO 118897556"
+    },
+    {
+        "transactionId": "f8b5e33a-8c99-430b-a059-b2bd605f77b8",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "50",
+        "date": "2018-01-15T03:00:00.000+0000",
+        "tag": "ATM",
+        "referenceNumber": "641296438 ATM CASH WTIHDRAWAL"
+    },
+    {
+        "transactionId": "3498ca8a-73a4-4169-a45f-1ffde3ac2eb5",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "15.04",
+        "date": "2018-01-16T09:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "711156794 JACK RIDE HAILING"
+    },
+    {
+        "transactionId": "6167bfbd-ad3f-4d63-81a3-20f58aa11b1c",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "13.7",
+        "date": "2018-01-17T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "177672321 THE VERY BEST CHICKEN RICE"
+    },
+    {
+        "transactionId": "1d771832-c667-48bf-8472-9f9f9d04be05",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "8.8",
+        "date": "2018-01-18T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "322238035 THE BURGER SHOP"
+    },
+    {
+        "transactionId": "4d1ed264-91c5-4b35-b281-3cb0239cd8fc",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "20.48",
+        "date": "2018-01-18T15:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "756382781 BANK FAST TRANSFER FROM 791102030"
+    },
+    {
+        "transactionId": "88404409-c65a-43e4-b793-22ec0b8057fc",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "15.41",
+        "date": "2018-01-19T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "684471721 THE OLIVE AFTER DARK"
+    },
+    {
+        "transactionId": "3bd752ba-91f5-4ccd-a9fc-b270410adc69",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "11.97",
+        "date": "2018-01-19T13:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "126874203 FAST-TREK TRANSPORT"
+    },
+    {
+        "transactionId": "c81bc82e-f99b-4a1b-a90f-48050801828f",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "20.4",
+        "date": "2018-01-19T09:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "520850497 BANK FAST TRANSFER FROM 506408939"
+    },
+    {
+        "transactionId": "86667536-9e46-4708-b538-2f373ca21d18",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "7.4",
+        "date": "2018-01-20T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "794247353 THE BURGER SHOP"
+    },
+    {
+        "transactionId": "92dfc654-836b-4092-a24d-0ed347bd8f2d",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "13.72",
+        "date": "2018-01-22T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "87257727 CRAZY SPICY THAI FOOD"
+    },
+    {
+        "transactionId": "5e3941fb-aa8e-4cac-a709-b1a51baae6b2",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "10.95",
+        "date": "2018-01-22T17:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "793574085 JACK RIDE HAILING"
+    },
+    {
+        "transactionId": "d17fcce0-6695-4e08-803f-227ec6d301f5",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "15.06",
+        "date": "2018-01-23T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "392762493 THE PROUD TABLE"
+    },
+    {
+        "transactionId": "29cbab59-b855-4cda-bd1c-73ee1314f12d",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "16.3",
+        "date": "2018-01-23T08:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "673961682 FAST-TREK TRANSPORT"
+    },
+    {
+        "transactionId": "fbba9956-52e8-4094-b89f-8b8e11286775",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "15.78",
+        "date": "2018-01-23T00:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "802909010 BANK FAST TRANSFER FROM 214733407"
+    },
+    {
+        "transactionId": "bdd33047-4850-4f4e-8801-419e05e0aad1",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "19.48",
+        "date": "2018-01-24T08:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "85890033 BANK FAST TRANSFER FROM 409310906"
+    },
+    {
+        "transactionId": "955f0208-419b-470e-8ddc-2b6b6d97ba32",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "800",
+        "date": "2018-01-25T00:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "554055887 BANK FAST TRANSFER FROM 923456789"
+    },
+    {
+        "transactionId": "e1b20a26-0047-40b5-aa8e-058da139b21c",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "16.4",
+        "date": "2018-01-25T15:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "54405761 BANK FAST TRANSFER FROM 478881103"
+    },
+    {
+        "transactionId": "4f7ed83d-c0ac-4063-bda4-f9cfecc91938",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "15.86",
+        "date": "2018-01-26T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "438980320 THE SPRING OYSTER"
+    },
+    {
+        "transactionId": "f145f329-87ba-489d-8197-4ced8da14282",
+        "accountId": 10,
+        "type": "CREDIT",
+        "amount": "16.87",
+        "date": "2018-01-27T01:00:00.000+0000",
+        "tag": "TRANSFER",
+        "referenceNumber": "78758109 BANK FAST TRANSFER FROM 150623513"
+    },
+    {
+        "transactionId": "215fe4a5-f865-4254-8b67-274ca6f6ac28",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "50",
+        "date": "2018-01-27T14:00:00.000+0000",
+        "tag": "ATM",
+        "referenceNumber": "859652856 ATM CASH WTIHDRAWAL"
+    },
+    {
+        "transactionId": "3be73fc7-5685-4bc0-ba31-7ef1bb2f700f",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "12.93",
+        "date": "2018-01-28T19:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "412725986 BONES"
+    },
+    {
+        "transactionId": "401e5ddd-bb3a-46c7-9a26-ba98d0c39736",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "9.39",
+        "date": "2018-01-29T13:00:00.000+0000",
+        "tag": "F&B",
+        "referenceNumber": "674920118 THE BURGER SHOP"
+    },
+    {
+        "transactionId": "e9475c75-bbde-45a9-9500-e5e068d405b2",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "13.14",
+        "date": "2018-01-29T06:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "188552786 SUBER FAST TRANSPORT PTE LTD"
+    },
+    {
+        "transactionId": "54f71b4c-03c7-4d43-81a4-9f7211dceb4d",
+        "accountId": 10,
+        "type": "DEBIT",
+        "amount": "16.75",
+        "date": "2018-01-30T05:00:00.000+0000",
+        "tag": "TRANSPORT",
+        "referenceNumber": "60660815 JACK RIDE HAILING"
+    }
+]

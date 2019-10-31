@@ -2,38 +2,77 @@
 <html>
 
 <head>
+    <style>
+        .container-fluid {
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function validateForm() {
+
+            var x;
+
+            // Get the value of the input field with id="numb"
+            login = document.getElementById("login").value;
+            pass = document.getElementById("password").value;
+            // If x is Not a Number or less than one or greater than 10
+            if (login == 'marytan' || 'limzeyang' || 'prasannaghali') {
+                if (pass == 123456) {
+                    console.log("true");
+                    window.location = "http://b4b64f0d.ngrok.io/ExpenseApp/dashboard.html";
+                    return true;
+                }
+
+            } else {
+                alert("Username and Password incorrect");
+                return false;
+            }
+
+        }
+
+    </script>
     <meta charset="ISO-8859-1">
     <title>Expenses App</title>
 </head>
 
 <body>
-    <h1>SaveLah</h1>
-    <div class="wrapper fadeInDown">
+
+    <div class="container-fluid">
+
+        <div class="wrapper fadeInDown">
             <div id="formContent">
-              <!-- Tabs Titles -->
-          
-              <!-- Icon -->
-              <div class="fadeIn first">
-                <img src="logo.png" id="icon" alt="User Icon" width="256" height="128"/>
-              </div>
-          
-              <!-- Login Form -->
-              <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                <input type="button" class="fadeIn fourth" value="Log In" onclick="location.href='dashboard.html'">
-              </form>
-          
-              <!-- Remind Password -->
-              <div id="formFooter">
-                <a class="underlineHover" href="#">Forgot Password?</a>
-              </div>
-          
+                <!-- Tabs Titles -->
+
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <img src="logo.png" id="icon" alt="User Icon" width="440" height="140" />
+                </div>
+                <h1>SaveLah</h1>
+
+                <!-- Login Form -->
+                <form>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="username" required
+                        pattern="marytan|limzeyang|prasannaghali" title="Incorrect Username">
+                    <input type="number" id="password" class="fadeIn third" name="login" placeholder="password">
+                    <input type="button" class="fadeIn fourth" value="Log In" onclick="validateForm()">
+                    <!--<input type="submit" class="fadeIn fourth" value="Log In" onclick="location.href='dashboard.html'">-->
+                </form>
+
+
+
+                <!-- Remind Password -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="#">Forgot Password?</a>
+                </div>
+
             </div>
-          </div>
+        </div>
+    </div>
 </body>
 
 </html>

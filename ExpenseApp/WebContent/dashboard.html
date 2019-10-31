@@ -10,6 +10,18 @@
             width: 100%;
             /* The width is the width of the web page */
         }
+
+        .table {
+            margin: 0 auto;
+            width: 1000px;
+
+        }
+
+        .myDynamicTable {
+            margin: 0 auto;
+            width: 1000px;
+
+        }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,24 +37,45 @@
 
 
     <!--Pie chart loading portion-->
+
     <script>
+        var output = [];
+        function fetchData() {
+            var myHeaders = new Headers();
+            myHeaders.set('identity', 'Group3');
+            myHeaders.set('token', '41ae9f00-7900-4b4a-a5e9-8d8482d1e89e');
+            myHeaders.set('Access-Control-Allow-Origin', '*');
+            myHeaders.set('mode', 'no-cors');
+            fetch('http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/transactions/10?from=01-01-2018&to=02-01-2018')
+                .then(res => res.json())
+                .then((out) => {
+                    array = out;
+                    console.log('Output: ', out);
+                    console.log(array);
+                }).catch(err => console.error(err));
+        }
+
 
         // fetch api with url
-        var output = "";
-        fetch('https://ghibliapi.herokuapp.com/films')
-            .then(res => res.json())
-            .then((out) => {
-                output = output+out;
-                console.log('Output: ', out);
-            
-            }).catch(err => console.error(err));
 
+        /* var myHeaders = new Headers();
+         myHeaders.set('identity', 'Group3');
+         myHeaders.set('token', '41ae9f00-7900-4b4a-a5e9-8d8482d1e89e');
+         myHeaders.set('Access-Control-Allow-Origin', '*');
+         myHeaders.set('mode', 'no-cors');
+        */
+        var array = [{ y: 79.45, label: "Transport" },
+        { y: 7.31, label: "ATM" },
+        { y: 7.06, label: "Transfer" },
+        { y: 4.91, label: "F&B" },
+        { y: 50.26, label: "Others" }]
 
 
 
 
         window.onload = function () {
-
+            fetchData();
+            tableCreate()
             var chart = new CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
                 title: {
@@ -51,21 +84,41 @@
                 data: [{
                     type: "pie",
                     startAngle: 240,
-                    yValueFormatString: "##0.00\"%\"",
-                    indexLabel: "{label} {y}",
-                    dataPoints: [
-                        { y: 79.45, label: "Transport" },
-                        { y: 7.31, label: "ATM" },
-                        { y: 7.06, label: "Transfer" },
-                        { y: 4.91, label: "F&B" },
-                        { y: 50.26, label: "Others" }
-                    ]
+                    yValueFormatString: "\"$\"##0.00\"SGD\"",
+                    indexLabel: "{label} {y} ",
+                    dataPoints: array
+
                 }]
             });
             chart.render();
 
 
         }
+
+        function tableCreate() {
+            var body = document.body,
+                tbl = document.createElement('table');
+            tbl.setAttribute("id", "myDynamicTable");
+            tbl.setAttribute("class", "table table-bordered table-striped text-center");
+
+
+            tbl.style.width = 'auto';
+            tbl.style.border = '1px solid black';
+
+            for (var i = 0; i < array.length; i++) {
+                var tr = tbl.insertRow();
+                var td = tr.insertCell();
+
+                td.appendChild(document.createTextNode(array[i].label));
+                td.appendChild(document.createTextNode(' ------------- '));
+                td.appendChild(document.createTextNode(array[i].y));
+                td.style.border = '0px solid black';
+            }
+            body.appendChild(tbl);
+        }
+        tableCreate();
+
+
     </script>
 
 
@@ -96,7 +149,11 @@
         </div>
     </nav>
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
 </body>
 
 </html>
